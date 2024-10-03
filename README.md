@@ -26,7 +26,9 @@ that this is likely to have been caused by a circular import.
 
 ## The examples
 
-You may explore the examples by directly viewing their code in the repo:
+The best way to go through this repo and its examples is by reviewing the different PRs that take you through the different steps of evolution for the toy example being studied here. To do that, start by visiting [#1](https://github.com/maljub01/python-circular-imports/pull/1).
+
+You may also explore the examples by directly viewing their code in the repo, if you prefer:
 
 1. **[Simple, but broken][ex1]**: Introduces the motivating example, where a circular dependency leads to runtime errors.
 2. **[Delayed access, but still broken][ex2]**: Demonstrates an initial stab at a fix.
