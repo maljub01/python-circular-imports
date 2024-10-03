@@ -1,22 +1,18 @@
-from typing import TYPE_CHECKING
+from __future__ import annotations
 
-from c import C
-
-if TYPE_CHECKING:
-    from a import A
+import a
+import c
 
 
 class B:
     def __init__(self, value: int):
         self.value = value
-        self.c = C(value)
+        self.c = c.C(value)
 
-    def get_a(self) -> "A":
-        from a import A
+    def get_a(self) -> a.A:
+        return a.A(self.value)
 
-        return A(self.value)
-
-    def get_c(self) -> C:
+    def get_c(self) -> c.C:
         return self.c
 
     def __str__(self) -> str:

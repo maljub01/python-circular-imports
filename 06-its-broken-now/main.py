@@ -1,10 +1,12 @@
-from a import A
-from b import B
-from c import C
+from __future__ import annotations
 
-my_a = A(1)
-my_b = B(2)
-my_c = C(3)
+import a
+import b
+import c
+
+my_a = a.A(1)
+my_b = b.B(2)
+my_c = c.C(3)
 
 print(my_a.get_b())
 print(my_b.get_a())
