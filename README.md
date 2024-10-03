@@ -23,3 +23,23 @@ During evaluation, modules will attempt to access definitions from each other. P
 even when those modules have not been fully initialized. However, if an attempt is made to access a definition
 from a partially initialized module, and the name is not found. Python will throw an `ImportError` and explain
 that this is likely to have been caused by a circular import.
+
+## The examples
+
+You may explore the examples by directly viewing their code in the repo:
+
+1. **[Simple, but broken][ex1]**: Introduces the motivating example, where a circular dependency leads to runtime errors.
+2. **[Delayed access, but still broken][ex2]**: Demonstrates an initial stab at a fix.
+3. **[Delayed access (fully working)][ex3]**: Takes another step towards fixing the circular dependency, and succeeds.
+4. **[Even better delayed access][ex4]**: Builds on top of the previous solution to make it more efficient.
+5. **[Things get messy][ex5]**: Demonstrates how real-world changes in requirements can add some complexity.
+6. **[It's broken now][ex6]**: Demonstrates how the problem can re-appear, making our solution less than ideal.
+7. **[Keep it simple][ex7]**: Backtracks a little bit to arrive at the ideal solution.
+
+[ex1]: ./01-simple-but-broken
+[ex2]: ./02-delayed-access-still-broken
+[ex3]: ./03-working-delayed-access
+[ex4]: ./04-even-better-delayed-access
+[ex5]: ./05-things-get-messy
+[ex6]: ./06-its-broken-now
+[ex7]: ./07-keep-it-simple
