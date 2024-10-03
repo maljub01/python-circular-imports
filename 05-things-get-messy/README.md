@@ -1,8 +1,8 @@
-# Keep it simple
+# Things get messy
 
 The combination of type checking import guards and delayed imports worked great
 for our toy example. We got it working and even saved ourselves from having to
-import a except when we really need it.
+import `A` except when we really need it.
 
 However, in the real world, things can get pretty complicated:
 1. We often need to use the same dependency in lots of places. It's not going to
